@@ -10,7 +10,7 @@ source:
   sha256: af20b5a7120ba303ca8845db62c9a7410ae5b5224a3eb3563cd70774a745b9f2
 
 build:
-  number: 0
+  number: 1
   skip: true  # [not linux]
   ignore_run_exports: libstdcxx-ng
 
