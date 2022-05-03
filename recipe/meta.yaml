@@ -1,5 +1,5 @@
 {% set name = "yad" %}
-{% set version = "11.1" %}
+{% set version = "12.0" %}
 
 package:
   name: {{ name }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/v1cont/{{ name }}/releases/download/v{{ version }}/{{ name }}-{{ version }}.tar.xz
-  sha256: ca61d422d6d464d7f473d1e5bd14d3ca05d311ef203f1c67bbea7c23bf0eae2f
+  sha256: 65dbfa72a229f6cbd131470caf4f70fec98fe935a1436acb58c841fa2a8bddde
 
 build:
   number: 0
