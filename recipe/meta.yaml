@@ -1,5 +1,5 @@
 {% set name = "yad" %}
-{% set version = "13.0" %}
+{% set version = "14.0" %}
 
 package:
   name: {{ name }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/v1cont/{{ name }}/releases/download/v{{ version }}/{{ name }}-{{ version }}.tar.xz
-  sha256: 194198c4a58e20ceffd9a3206633c3726d962d7d4219edb77aeb748897403e34
+  sha256: 2829681f0a9ebd07b7f651c6266d5bf6199235ef027c4936a76988e0471f8e1d
 
 build:
   number: 0
@@ -22,6 +22,7 @@ requirements:
     - automake
     - intltool
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
     - {{ compiler('cxx') }}
     - {{ cdt('mesa-libgl-devel') }}  # [linux]
     - {{ cdt('mesa-dri-drivers') }}  # [linux]
